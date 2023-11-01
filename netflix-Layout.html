@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Homepage</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+        }
+        .logo img{
+            height: 25vh;
+        }
+        .logo{
+           font-size: 20px;
+           font-weight: bold;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+        }
+        nav li{
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        main{
+            padding: 20px;
+        }
+        .feactured{
+            padding: 20px;
+        }
+        .section-title{
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .cards{
+            display: flex;
+            overflow-x: scroll;
+        }
+        .content-card{
+            width: 200px;
+            height: 250px;
+            margin-right: 20px;
+            box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius:5px;
+        }
+        .content-card img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .footer-content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .footer-link ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-link li{
+            margin-bottom: 20px;
+        }
+        .footer-link a{
+            color:blue;
+            text-decoration:none;
+        }
+        .footer-logo img{
+            width: 100px;
+        }
+        .footer-credits{
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Add  netflix logo and navigation-->
+        <div class="logo"><img src="images/Netflixlogo.png" alt="Netflix Logo"></div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Movies</li>
+                <li>Tv shows</li>
+                <!--Add navigations lists here-->
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <section class="feactured">
+              <h2 class="section-title">Feactured Content</h2>
+              <div class="cards">
+                <div class="content-card">
+                    <img src="images/movie1.jpeg" alt="Movie1 image">
+                    <p>digital ma</p>
+                    <a href="myname is vedenta">MY name is vedenta</a>
+                </div>
+                <div class="content-card">
+                    <img src="images/movie2.jpeg" alt="Movie2">
+
+                </div>
+                <div class="content-card">
+                    <img src="images/movie3.jpeg" alt="movie3">
+                </div>
+                <div class="content-card">
+                    <img src="images/movie4.jpeg" alt="movie4">
+                </div>
+                <div class="content-card">
+                    <img src="images/movie5.jpeg" alt="movie5">
+                </div>
+              </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-link">
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/Netflixlogo.png" alt="Netflix Logo">
+                </div>
+                <div class="footer-credits">
+                    &amp;copy; 2023 Netflix. All rights reserved.
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

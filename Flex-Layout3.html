@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            min-height: 60vh;
+        }
+        header,footer{
+            min-height: 20vh;
+            background-color: yellowgreen;
+        }
+        .content nav,
+        .content aside{
+            background-color: bisque;
+            flex: 1;
+        }
+        .content article{
+            flex: 3;
+        }
+        header,footer,nav,aside,article{
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main class="content">
+        <nav>nav</nav>
+        <article>article</article>
+        <aside>aside</aside>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
